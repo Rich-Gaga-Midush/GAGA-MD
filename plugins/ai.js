@@ -6,12 +6,12 @@ const { default: axios } = require('axios');
 
 
 
-zokou({nomCom:"beltah1",reaction:"👻",categorie:"Ai"},async(dest,zk,commandeOptions)=>{
+zokou({nomCom:"Gaga",reaction:"🥷",categorie:"Ai"},async(dest,zk,commandeOptions)=>{
 
   const {repondre,ms,arg}=commandeOptions;
   
     if(!arg || !arg[0])
-    {return repondre("Yes!! I'm an Artificial Intelligence Bot created by ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 👻.How may I assist you with?")}
+    {return repondre("Yes!! I'm an Artificial Intelligence Bot created by ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ.How may I assist you with?")}
     //var quest = arg.join(' ');
   try{
     
@@ -58,7 +58,7 @@ fetch(`http://api.brainshop.ai/get?bid=177607&key=NwzhALqeO1kubFVD&uid=[uid]&msg
       const response = await axios.get(`http://api.maher-zubair.tech/ai/photoleap?q=${image}`);
       
       const data = response.data;
-      let caption = '*ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 👻*';
+      let caption = '*ʀᴇɢᴀʀᴅs ᴛᴏ ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ*';
       
       if (data.status == 200) {
         // Utiliser les données retournées par le service
