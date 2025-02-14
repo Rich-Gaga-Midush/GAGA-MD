@@ -1,15 +1,15 @@
 
  {
-  "name": "Beltah-xbot",
+  "name": "gaga md",
   "version": "2.0.0",
   "description": "",
-  "main": "beltah.js",
+  "main": "richard.js",
     "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "s": "node beltah.js", 
-    "zokou": "pm2 start beltah.js --attach --max-memory-restart 490M",
-    "alpha": "pm2 start brian.js --attach",
+    "s": "node richard.js", 
+    "zokou": "pm2 start richard.js --attach --max-memory-restart 490M",
+    "brian": "pm2 start brian.js --attach",
     "c": "tsc"
     },
   "keywords": [
