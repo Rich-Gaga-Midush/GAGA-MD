@@ -61,7 +61,8 @@ zokou(
 🔄 *Updated At :* ${updated_at}
 🧩 *Created At :* ${created_at}
 👤 *Profile :* ${html_url}
-\n\n> ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 👻`;
+\n\n> ɢᴇɴᴇʀᴀᴛᴇᴅ ʙʏ ɢᴀɢᴀ ᴍᴅ
+`;
     await zk.sendMessage(dest, {
       image: {url: profile_pic},
       caption: info
