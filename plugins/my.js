@@ -8,7 +8,7 @@ const ffmpeg = require("fluent-ffmpeg");
 zokou({
   nomCom: "mygroups",
   categorie: "User",
-  reaction: "💿"
+  reaction: "🔊"
 }, async (senn, zk, commandeOptions) => {
   const { repondre } = commandeOptions;
 
@@ -18,13 +18,13 @@ zokou({
     const anaa = groupzs.map(v => v.id);
     let jackhuh = `*GROUPS AM IN*\n\n`;
 
-    repondre(`You are currently in ${anaa.length} groups,ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 👻 will send that list in a moment...`);
+    repondre(`You are currently in ${anaa.length} groups,𝚇𝙶𝙰𝙶𝙰 𝙱𝙾𝚃𝚂 🥷 will send that list in a moment...`);
 
     for (const i of anaa) {
       const metadat = await zk.groupMetadata(i);
       jackhuh += `*GROUP NAME:* ${metadat.subject}\n`;
       jackhuh += `*MEMBERS:* ${metadat.participants.length}\n`;
-      jackhuh += `*GROUP ID:* ${i}\n\n"> ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 👻`;
+      jackhuh += `*GROUP ID:* ${i}\n\n"> 𝚇𝙶𝙰𝙶𝙰 𝙱𝙾𝚃𝚂 🥷`;
     }
     
     await repondre(jackhuh);
