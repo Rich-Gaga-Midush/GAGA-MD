@@ -81,7 +81,7 @@ setTimeout(() => {
         const sockOptions = {
             version,
             logger: pino({ level: "silent" }),
-            browser: ['BELTAH-MD', "safari", "1.0.0"],
+            browser: ['GAGA-MD', "safari", "1.0.0"],
             printQRInTerminal: true,
             fireInitQueries: false,
             shouldSyncHistoryMessage: true,
@@ -132,7 +132,7 @@ function getCurrentDateTime() {
 setInterval(async () => {
     if (conf.AUTO_BIO === "yes") {
         const currentDateTime = getCurrentDateTime(); // Get the current date and time
-        const bioText = `👻 ᴘᴏᴘᴋɪᴅ x-ᴛᴇᴄʜ 👻 ɪs ᴏɴʟɪɴᴇ : ${currentDateTime}`; // Format the bio text
+        const bioText = `Gaga md bot is active : ${currentDateTime}`; // Format the bio text
         await zk.updateProfileStatus(bioText); // Update the bio
         console.log(`Updated Bio: ${bioText}`); // Log the updated bio
     }
@@ -147,13 +147,13 @@ setInterval(async () => {
 
     await zk.rejectCall(callId, callerId);
     await zk.sendMessage(callerId, {
-      text: "*sᴏʀʀʏ!! ɴᴏ ᴄᴀʟʟs ᴀʟʟᴏᴡᴇᴅ, ᴋɪɴᴅʟʏ ᴛᴇxᴛ.*\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴜsᴛᴀғғᴀ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ."
+      text: "*sᴏʀʀʏ!! ɴᴏ ᴄᴀʟʟs ᴀʟʟᴏᴡᴇᴅ, ᴋɪɴᴅʟʏ ᴛᴇxᴛ.*\n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ."
     });
   }
 });
 
         // Default auto-reply message
-let auto_reply_message = "ᴛʜᴇ ᴏᴡɴᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ,,ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ. ᴡᴇ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ sᴏᴏɴ.\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴜsᴛᴀғғᴀ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ.";
+let auto_reply_message = "ᴛʜᴇ ᴏᴡɴᴇʀ ɪs ᴄᴜʀʀᴇɴᴛʟʏ ᴜɴᴀᴠᴀɪʟᴀʙʟᴇ,,ᴛʜᴀɴᴋ ʏᴏᴜ ғᴏʀ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ. ᴡᴇ ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ sᴏᴏɴ.\n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ.";
 
 // Track contacts that have already received the auto-reply
 let repliedContacts = new Set();
@@ -325,7 +325,7 @@ zk.ev.on("messages.upsert", async (m) => {
                     if (deletedMessage.message.conversation) {
                         // Text message
                         await zk.sendMessage(remoteJid, {
-                            text: notification + `*📖Deleted Message:* ${deletedMessage.message.conversation}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴜsᴛᴀғғᴀ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ.`,
+                            text: notification + `*📖Deleted Message:* ${deletedMessage.message.conversation}\n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ.`,
                             mentions: [deletedMessage.key.participant],
                         });
                     } else if (deletedMessage.message.imageMessage || 
