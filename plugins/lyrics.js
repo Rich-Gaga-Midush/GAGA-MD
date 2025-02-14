@@ -3,9 +3,9 @@ const lyricsFinder = require('lyrics-finder');
 const yts = require('yt-search');
 
 zokou({
-    nomCom: 'slyrics',
+    nomCom: 'lyrics',
     aliases: ['lyric', 'mistari'],
-    reaction: '📑',
+    reaction: '🚇',
 }, async (zk, dest, context) => {
     const { repondre, arg, ms } = context;
 
@@ -42,7 +42,7 @@ zokou({
 
         // Format the message to send to the user
         const formattedMessage = `
-*BELTAH X-BOT LYRICS FINDER*
+*xɢᴀɢᴀ ʙᴏᴛ ʟʏʀɪᴄs ғɪɴᴅᴇʀ 🔊🔊*
 *Title:* ${title}
 *Artist:* ${artist}
 
