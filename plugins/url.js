@@ -90,13 +90,13 @@ zokou({ nomCom: "tourl", categorie: "General", reaction: "👨🏿‍💻" }, as
         // Respond with the URL based on media type
         switch (mediaType) {
             case 'image':
-                repondre(`Your Link is here: ${catboxUrl} \n\n> ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 👻`);
+                repondre(`Your Link is here: ${catboxUrl} \n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ`);
                 break;
             case 'video':
-                repondre(`Your link is here: ${catboxUrl} \n\n> ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 👻`);
+                repondre(`Your link is here: ${catboxUrl} \n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ`);
                 break;
             case 'audio':
-                repondre(`Your link is here: ${catboxUrl} \n\n> ʙᴇʟᴛᴀʜ ᴛᴇᴄʜ 👻}`);
+                repondre(`Your link is here: ${catboxUrl} \n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ`);
                 break;
             default:
                 repondre('An unknown error occurred.');
