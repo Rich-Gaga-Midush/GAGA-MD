@@ -1326,15 +1326,15 @@ zk.ev.on('group-participants.update', async (group) => {
                 console.log(" Popkid-md loading plugins😇\n\n");
                 //chargement des commandes 
                 console.log("chargement des plugins ...\n");
-                fs.readdirSync(__dirname + "/commandes").forEach((fichier) => {
+                fs.readdirSync(__dirname + "/plugins").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
-                            require(__dirname + "/commandes/" + fichier);
+                            require(__dirname + "/plugins/" + fichier);
                             console.log(fichier + " Loaded successfully by Popkid✔️");
                         }
                         catch (e) {
                             console.log(`${fichier} could not be loaded for the following reasons : ${e}`);
-                        } /* require(__dirname + "/commandes/" + fichier);
+                        } /* require(__dirname + "/plugins/" + fichier);
                          console.log(fichier + " installé ✔️")*/
                         (0, baileys_1.delay)(300);
                     }
