@@ -72,11 +72,11 @@ zokou({
         mimetype: 'audio/mp4',
         contextInfo: {
           externalAdReply: {
-            title: videoDetails.title,
+            title: "𝐗𝐆𝐀𝐆𝐀 𝐁𝐎𝐓 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃",
             body: videoDetails.title,
             mediaType: 1,
-            sourceUrl: conf.GURL,
-            thumbnailUrl: firstVideo.thumbnail,
+            sourceUrl: "https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F",
+            thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg",
             renderLargerThumbnail: false,
             showAdAttribution: true,
           },
@@ -87,11 +87,11 @@ zokou({
         mimetype: 'audio/mpeg',
         contextInfo: {
           externalAdReply: {
-            title: videoDetails.title,
-            body: videoDetails.title,
+            title: "𝐗𝐆𝐀𝐆𝐀 𝐁𝐎𝐓 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃",
+            body: "",
             mediaType: 1,
-            sourceUrl: conf.GURL,
-            thumbnailUrl: firstVideo.thumbnail,
+            sourceUrl: "https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F",
+            thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg",
             renderLargerThumbnail: false,
             showAdAttribution: true,
           },
@@ -194,11 +194,11 @@ zokou({
         mimetype: 'video/mp4',
         contextInfo: {
           externalAdReply: {
-            title: videoDetails.title,
+            title: "𝐗𝐆𝐀𝐆𝐀 𝐁𝐎𝐓 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃",
             body: videoDetails.title,
             mediaType: 1,
-            sourceUrl: conf.GURL,
-            thumbnailUrl: firstVideo.thumbnail,
+            sourceUrl: "https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F",
+            thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg",
             renderLargerThumbnail: false,
             showAdAttribution: true,
           },
@@ -209,11 +209,11 @@ zokou({
         mimetype: 'video/mp4',
         contextInfo: {
           externalAdReply: {
-            title: videoDetails.title,
+            title: "𝐗𝐆𝐀𝐆𝐀 𝐁𝐎𝐓 𝐒𝐎𝐍𝐆 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃",
             body: videoDetails.title,
             mediaType: 1,
-            sourceUrl: conf.GURL,
-            thumbnailUrl: firstVideo.thumbnail,
+            sourceUrl: "https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F",
+            thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg",
             renderLargerThumbnail: false,
             showAdAttribution: true,
           },
