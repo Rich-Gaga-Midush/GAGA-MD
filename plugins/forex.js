@@ -1,4 +1,4 @@
-const {zokou} = require("framework/zokou");
+gconst { zokou } = require("../framework/zokou");
 const fetch = require("node-fetch");
 zokou(
   {
