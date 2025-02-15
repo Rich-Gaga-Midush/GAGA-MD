@@ -39,12 +39,11 @@ zokou({ nomCom: "forex1", categorie: 'Forex', reaction: "📣" }, async (dest, z
     }
   }
 );
-smd(
+zokou(
   {
-    pattern: "fxstatus",
+    nomCom: "fxstatus",
     category: "forex",
     desc: "Fetches the current status of the forex market",
-    filename: __filename,
     use: "fxstatus",
   },
   async (message) => {
@@ -96,12 +95,11 @@ smd(
   }
 );
 
-smd(
+zokou(
   {
-    pattern: "fxpairs",
+    nomCom: "fxpairs",
     category: "forex",
     desc: "Fetches a list of active forex currency pairs",
-    filename: __filename,
     use: "fxpairs",
   },
   async (message) => {
@@ -127,9 +125,9 @@ smd(
     }
   }
 );
-smd(
+zokou(
   {
-    pattern: "fxexchange",
+    nomCom: "fxexchange",
     category: "forex",
     desc: "Fetches the latest foreign exchange rates against the US Dollar",
     filename: __filename,
@@ -160,9 +158,9 @@ smd(
     }
   }
 );
-smd(
+zokou(
   {
-    pattern: "stocktickers",
+    nomCom: "stocktickers",
     category: "forex",
     desc: "Fetches a list of active stock tickers",
     filename: __filename,
