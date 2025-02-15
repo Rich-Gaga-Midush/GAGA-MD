@@ -1,6 +1,6 @@
-const { smd, send } = require("../lib");
+const {zokou} = require("framework/zokou");
 const fetch = require("node-fetch");
-smd(
+zokou(
   {
     pattern: "forex1",
     category: "forex",
