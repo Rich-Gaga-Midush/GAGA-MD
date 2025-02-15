@@ -1,23 +1,10 @@
-const {
-   updateProfilePicture,
-   parsedJid
- } = require("../lib");
- const {
-   sck,
-   smd,
-   send,
-   Config,
-   tlang,
-   sleep,
-   getAdmin,
-   prefix
- } = require("../lib");
- const astro_patch = require("../lib/plugins");
- const {
-   cmd
- } = astro_patch;
- const grouppattern = /https:\/\/chat\.whatsapp\.com\/[A-Za-z0-9]{22}/g;
- smd({
+const { zokou } = require("../framework/zokou");
+const { downloadMediaMessage, downloadContentFromMessage } = require("@whiskeysockets/baileys");
+const { exec } = require('child_process');
+const { writeFile } = require("fs/promises");
+const fs = require('fs-extra');
+const moment = require("moment-timezone");
+ zokou({
    cmdname: "join",
    info: "joins group by link",
    type: "whatsapp",
