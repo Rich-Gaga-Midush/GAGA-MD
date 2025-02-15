@@ -4,13 +4,11 @@ const { exec } = require('child_process');
 const { writeFile } = require("fs/promises");
 const fs = require('fs-extra');
 const moment = require("moment-timezone");
- zokou({
-   cmdname: "join",
-   info: "joins group by link",
-   type: "whatsapp",
-   fromMe: true,
-   filename: __filename,
-   use: "<group link.>"
+zokou({
+  nomCom: 'join',
+  aliase: 'enter',
+  categorie: "Group",
+  reaction: '✈️'
  }, async (_0x466dd8, _0x5b1338) => {
    try {
      if (_0x466dd8.reply_message && _0x466dd8.reply_message.groupInvite) {
@@ -30,15 +28,15 @@ const moment = require("moment-timezone");
      await _0x466dd8.error(_0x5d3484 + "\n\ncommand: join", _0x5d3484, "*_Can't Join, Group Id not found, Sorry!!_*");
    }
  });
- smd({
-   cmdname: "newgc",
-   info: "Create New Group",
-   type: "whatsapp",
-   filename: __filename,
+zokou({
+  nomCom: 'newgroup',
+  aliase: 'newchat',
+  categorie: "Whatsapp",
+  reaction: '🚀'
    use: "<group link.>"
  }, async (_0x1d2f1f, _0x3c558e, {
-   smd: _0x2e7a79,
-   cmdName: _0x49994a
+   zokou: _0x2e7a79,
+   nomCom: _0x49994a
  }) => {
    try {
      if (!_0x1d2f1f.isCreator) {
@@ -79,7 +77,7 @@ const moment = require("moment-timezone");
        var _0x2fe2c7 = "" + _0x2608ab + _0x3a49e9;
        var _0x539d8f = {
          externalAdReply: {
-           title: "𝗦𝗨𝗛𝗔𝗜𝗟-𝗠𝗗",
+           title: "GAGA MD",
            body: "" + _0x37b490,
            renderLargerThumbnail: true,
            thumbnail: log0,
