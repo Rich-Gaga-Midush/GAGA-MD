@@ -1,4 +1,4 @@
-gconst { zokou } = require("../framework/zokou");
+const { zokou } = require("../framework/zokou");
 const fetch = require("node-fetch");
 zokou({ nomCom: "forex1", categorie: 'Forex', reaction: "📣" }, async (dest, zk, commandeOptions) => {
   {
