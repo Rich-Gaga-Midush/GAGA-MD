@@ -84,7 +84,7 @@
        "BOT_MENU_LINKS" : 
    {
     "description":"add one or many link for your bot menu  ; eg : url1,url2,url3.....",
-    "value":"https://i.ibb.co/YtQQdJZ/IMG-20250118-WA0052.jpg",
+    "value":"https://files.catbox.moe/sfk02i.jpg",
     "required":false
        
      },
