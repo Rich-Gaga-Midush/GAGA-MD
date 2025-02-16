@@ -1,4 +1,4 @@
-const { keith } = require("../keizzah/keith");
+const { zokou } = require("../framework/zokou");
 const { downloadMediaMessage, downloadContentFromMessage } = require("@whiskeysockets/baileys");
 const { exec } = require('child_process');
 const { writeFile } = require("fs/promises");
@@ -16,7 +16,7 @@ const { default: axios } = require('axios');
 
 
 
-keith({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, zk, commandeOptions) => {
 
   const { ms, repondre, arg, verifGroupe, nomGroupe, infosGroupe, nomAuteurMessage, verifAdmin, superUser } = commandeOptions
 
@@ -32,7 +32,7 @@ keith({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   var tag = ""; 
   tag += `========================\n  
-        🌟 *ALPHA-MD* 🌟
+        🌟 *AGAGA-MD* 🌟
 ========================\n
 👥 Group : ${nomGroupe} 🚀 
 👤 Author : *${nomAuteurMessage}* 👋 
@@ -63,7 +63,7 @@ keith({ nomCom: "tagall", categorie: 'Group', reaction: "📣" }, async (dest, z
 });
 
 
-keith({ nomCom: "invite", categorie: 'Group', reaction: "🙋" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "invite", categorie: 'Group', reaction: "🙋" }, async (dest, zk, commandeOptions) => {
   const { repondre, nomGroupe, nomAuteurMessage, verifGroupe } = commandeOptions;
   if (!verifGroupe) { repondre("wait bro , you want the link to my dm?"); return; };
 
@@ -79,7 +79,7 @@ Click Here To Join :${lien}`
 
 });
 /** *nommer un membre comme admin */
-keith({ nomCom: "promote", categorie: 'Group', reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "promote", categorie: 'Group', reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   if (!verifGroupe) { return repondre("For groups only"); }
@@ -140,7 +140,7 @@ keith({ nomCom: "promote", categorie: 'Group', reaction: "👨🏿‍💼" }, as
 //fin nommer
 /** ***demettre */
 
-keith({ nomCom: "demote", categorie: 'Group', reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "demote", categorie: 'Group', reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   if (!verifGroupe) { return repondre("For groups only"); }
@@ -206,7 +206,7 @@ keith({ nomCom: "demote", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
 
 /** ***fin démettre****  **/
 /** **retirer** */
-keith({ nomCom: "remove", categorie: 'Group', reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "remove", categorie: 'Group', reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, nomAuteurMessage, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   if (!verifGroupe) { return repondre("for groups only"); }
@@ -283,7 +283,7 @@ keith({ nomCom: "remove", categorie: 'Group', reaction: "👨🏿‍💼" }, asy
 /** ***fin démettre****  **
 /** *****fin retirer */
 
-keith({ nomCom: "add", categorie: 'Group', reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "add", categorie: 'Group', reaction: "👨🏿‍💼" }, async (dest, zk, commandeOptions) => {
   let { repondre, msgRepondu, infosGroupe, auteurMsgRepondu, verifGroupe, nomAuteurMessage, auteurMessage, superUser, idBot } = commandeOptions;
   let membresGroupe = verifGroupe ? await infosGroupe.participants : ""
   if (!verifGroupe) { return repondre("for groups only");} 
@@ -321,7 +321,7 @@ keith({ nomCom: "add", categorie: 'Group', reaction: "👨🏿‍💼" }, async 
 /** *****fin retirer */
 
 
-keith({ nomCom: "del", categorie: 'Group',reaction:"🧹" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "del", categorie: 'Group',reaction:"🧹" }, async (dest, zk, commandeOptions) => {
 
   const { ms, repondre, verifGroupe,auteurMsgRepondu,idBot, msgRepondu, verifAdmin, superUser} = commandeOptions;
   
@@ -369,7 +369,7 @@ keith({ nomCom: "del", categorie: 'Group',reaction:"🧹" }, async (dest, zk, co
 
 });
 
-keith({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) => {
   const { ms, repondre, verifGroupe } = commandeOptions;
   if (!verifGroupe) { repondre("order reserved for the group only"); return };
 
@@ -393,7 +393,7 @@ keith({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
 
  //------------------------------------antilien-------------------------------
 
- keith({ nomCom: "antilink", categorie: 'Group', reaction: "🔗" }, async (dest, zk, commandeOptions) => {
+ zokou({ nomCom: "antilink", categorie: 'Group', reaction: "🔗" }, async (dest, zk, commandeOptions) => {
 
 
   var { repondre, arg, verifGroupe, superUser, verifAdmin } = commandeOptions;
@@ -461,7 +461,7 @@ keith({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
 
  //------------------------------------antibot-------------------------------
 
- keith({ nomCom: "antibot", categorie: 'Group', reaction: "🔗" }, async (dest, zk, commandeOptions) => {
+ zokou({ nomCom: "antibot", categorie: 'Group', reaction: "🔗" }, async (dest, zk, commandeOptions) => {
 
 
   var { repondre, arg, verifGroupe, superUser, verifAdmin } = commandeOptions;
@@ -527,7 +527,7 @@ keith({ nomCom: "info", categorie: 'Group' }, async (dest, zk, commandeOptions) 
 
 //----------------------------------------------------------------------------
 
-keith({ nomCom: "group", categorie: 'Group' }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "group", categorie: 'Group' }, async (dest, zk, commandeOptions) => {
 
   const { repondre, verifGroupe, verifAdmin, superUser, arg } = commandeOptions;
 
@@ -557,7 +557,7 @@ keith({ nomCom: "group", categorie: 'Group' }, async (dest, zk, commandeOptions)
 
 });
 
-keith({ nomCom: "left", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "left", categorie: "Mods" }, async (dest, zk, commandeOptions) => {
 
   const { repondre, verifGroupe, superUser } = commandeOptions;
   if (!verifGroupe) { repondre("order reserved for group only"); return };
@@ -589,7 +589,7 @@ zokou({ nomCom: "gname", categorie: 'Group' }, async (dest, zk, commandeOptions)
  
 }) ;
 
-keith({ nomCom: "gdesc", categorie: 'Group' }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "gdesc", categorie: 'Group' }, async (dest, zk, commandeOptions) => {
 
   const { arg, repondre, verifAdmin } = commandeOptions;
 
@@ -609,7 +609,7 @@ keith({ nomCom: "gdesc", categorie: 'Group' }, async (dest, zk, commandeOptions)
 }) ;
 
 
-krith({ nomCom: "gpp", categorie: 'Group' }, async (dest, zk, commandeOptions) => {
+zokou({ nomCom: "gpp", categorie: 'Group' }, async (dest, zk, commandeOptions) => {
 
   const { repondre, msgRepondu, verifAdmin } = commandeOptions;
 
@@ -634,7 +634,7 @@ krith({ nomCom: "gpp", categorie: 'Group' }, async (dest, zk, commandeOptions) =
 });
 
 /////////////
-keith({nomCom:"hidetag",categorie:'Group',reaction:"🎤"},async(dest,zk,commandeOptions)=>{
+zokou({nomCom:"hidetag",categorie:'Group',reaction:"🎤"},async(dest,zk,commandeOptions)=>{
 
   const {repondre,msgRepondu,verifGroupe,arg ,verifAdmin , superUser}=commandeOptions;
 
@@ -699,7 +699,7 @@ keith({nomCom:"hidetag",categorie:'Group',reaction:"🎤"},async(dest,zk,command
         let media  = await zk.downloadAndSaveMediaMessage(msgRepondu.stickerMessage)
 
         let stickerMess = new Sticker(media, {
-          pack: 'ALPHA-MD-tag',
+          pack: 'GAGA-MD-tag',
           type: StickerTypes.CROPPED,
           categories: ["🤩", "🎉"],
           id: "12345",
@@ -749,7 +749,7 @@ keith({nomCom:"hidetag",categorie:'Group',reaction:"🎤"},async(dest,zk,command
 const cron = require(`../bdd/cron`) ;
 
 
-keith({
+zokou({
       nomCom : 'automute',
       categorie : 'Group'
   } , async (dest,zk,commandeOptions) => {
@@ -821,7 +821,7 @@ keith({
   });
 
 
-  keith({
+  zokou({
     nomCom : 'autounmute',
     categorie : 'Group'
 } , async (dest,zk,commandeOptions) => {
@@ -898,7 +898,7 @@ keith({
 
 
 
-keith({
+zokou({
   nomCom : 'fkick',
   categorie : 'Group'
 } , async (dest,zk,commandeOptions) => {
@@ -931,7 +931,7 @@ keith({
 }) ;
 
 
-keith({
+zokou({
       nomCom : 'nsfw',
       categorie : 'Group'
 }, async (dest,zk,commandeOptions) => {
@@ -965,7 +965,7 @@ keith({
     }
 } ) ;
 
-keith({
+zokou({
   nomCom: 'broadcast',
   aliase: 'spread',
   categorie: "Group",
@@ -985,7 +985,7 @@ keith({
   const groupIds = Object.values(groups).map(group => group.id);
   await repondre("*ALPHA-MD is sending your message to all groups ,,,💀*...");
 
-  const broadcastMessage = `*🌟𝐀𝐋𝐏𝐇𝐀-𝐌𝐃 𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓🌟*\n\n🀄 Message: ${arg.join(" ")}\n\n🗣️ Author: ${nomAuteurMessage}`;
+  const broadcastMessage = `*🌟 Broadcast by Gaga md🌟*\n\n🀄 Message: ${arg.join(" ")}\n\n🗣️ Author: ${nomAuteurMessage}`;
   for (let groupId of groupIds) {
     await client.sendMessage(groupId, {
       image: { url: 'https://i.imgur.com/HDLN3If.jpeg' },
@@ -1011,7 +1011,7 @@ const handleDisapCommand = async (chatId, client, context, duration) => {
 };
 
 // Disappearing Messages Off Command
-keith({
+zokou({
   nomCom: "disap-off",
   categorie: "Group",
   reaction: '㋛'
@@ -1030,7 +1030,7 @@ keith({
   repondre("Disappearing messages successfully turned off!");
 });
 
-keith({
+zokou({
   nomCom: "poll",
   reaction: '✨',
   categorie: "group"
@@ -1054,7 +1054,7 @@ keith({
 
 
 // Disappearing Messages Setup Command
-keith({
+zokou({
   nomCom: 'disap',
   categorie: "Group",
   reaction: '❦'
@@ -1073,10 +1073,10 @@ keith({
 });
 
 // Disappearing Messages Commands (1, 7, 90 days)
-keith({ nomCom: "disap1", categorie: "Group", reaction: '⚪' }, async (chatId, client, context) => {
+zokou({ nomCom: "disap1", categorie: "Group", reaction: '⚪' }, async (chatId, client, context) => {
   handleDisapCommand(chatId, client, context, 86400); // 1 day
 });
-keith({ nomCom: "disap7", categorie: 'Group', reaction: '⚪' }, async (chatId, client, context) => {
+zokou({ nomCom: "disap7", categorie: 'Group', reaction: '⚪' }, async (chatId, client, context) => {
   handleDisapCommand(chatId, client, context, 604800); // 7 days
 });
 keith({ nomCom: "disap90", categorie: 'Group', reaction: '⚪' }, async (chatId, client, context) => {
@@ -1084,11 +1084,11 @@ keith({ nomCom: "disap90", categorie: 'Group', reaction: '⚪' }, async (chatId,
 });
 
 // Requests Command
-keith({
+zokou({
   nomCom: 'req',
   alias: 'requests',
   categorie: "Group",
-  reaction: "⚪"
+  reaction: "👽"
 }, async (chatId, client, context) => {
   const { repondre, verifGroupe, verifAdmin } = context;
 
@@ -1137,15 +1137,15 @@ const handleRequestCommand = async (chatId, client, context, action) => {
 };
 
 // Approve Requests Command
-keith({
+zokou({
   nomCom: "approve",
   categorie: "Group",
-  reaction: "⚪"
+  reaction: "👽"
 }, (chatId, client, context) => handleRequestCommand(chatId, client, context, "approve"));
 
 // Reject Requests Command
-keith({
+zokou({
   nomCom: "reject",
   categorie: "Group",
-  reaction: "⚪"
+  reaction: "👽"
 }, (chatId, client, context) => handleRequestCommand(chatId, client, context, "reject"));
