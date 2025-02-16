@@ -3,7 +3,7 @@
   "description":"Best whatsapp bot created by MUSTAFFA MK",
   "keywords":["bot","node","baileys","whatsapp"],
   "logo":"https://i.ibb.co/2YpJYk3T/temp-image.jpg",
-  "repository":"https://github.com/Mustaffamkm/MUSTAFFAMK-",
+  "repository":"https://github.com/richgagamidush/XG-M",
   "succes_url":"/",
   "stack":"container",
   "env":{
