@@ -2,7 +2,7 @@
   "name":"XGAGA BOTS",
   "description":"Best whatsapp bot created by MUSTAFFA MK",
   "keywords":["bot","node","baileys","whatsapp"],
-  "logo":"https://i.ibb.co/2YpJYk3T/temp-image.jpg",
+  "logo":"https://files.catbox.moe/sfk02i.jpg",
   "repository":"https://github.com/richgagamidush/XG-M",
   "succes_url":"/",
   "stack":"container",
