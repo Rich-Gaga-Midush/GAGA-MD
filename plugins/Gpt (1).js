@@ -1,11 +1,11 @@
-const { keith } = require("../keizzah/keith");
+const { zokou } = require("../framework/zokou");
 const ai = require('unlimited-ai');
 const fs = require('fs');
 
-keith({
-  nomCom: "deepseek",
+zokou({
+  nomCom: "darkgpt",
   aliases: ["gpt4", "ai"],
-  reaction: '⚔️',
+  reaction: '🚇',
   categorie: "AI"
 }, async (dest, zk, params) => {
   const { repondre, arg } = params;
@@ -48,10 +48,10 @@ keith({
       text: aiResponse,
       contextInfo: {
         externalAdReply: {
-          title: "DEEPSEEK AI TOOL",
-          body: `Keep learning`,
-          thumbnailUrl: "https://files.catbox.moe/elnwwy.png", // Replace with your bot profile photo URL
-          sourceUrl: "https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47", // Your channel URL
+          title: "DARKGPT AI TOOL",
+          body: `Enjoy`,
+          thumbnailUrl: "https://files.catbox.moe/oznlsw.jpg", // Replace with your bot profile photo URL
+          sourceUrl: "https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F", // Your channel URL
           mediaType: 1,
           showAdAttribution: true, // Verified badge
         },
@@ -64,10 +64,10 @@ keith({
   }
 });
 
-keith({
-  nomCom: "gpt",
+zokou({
+  nomCom: "chatgpt",
   aliases: ["gpt4", "ai"],
-  reaction: '⚔️',
+  reaction: '🚇',
   categorie: "AI"
 }, async (dest, zk, params) => {
   const { repondre, arg } = params;  // Use args for the command arguments
@@ -93,10 +93,10 @@ keith({
       text: response,
       contextInfo: {
         externalAdReply: {
-          title: "ALPHA-MD GPT4",
+          title: "XGAGA BOTS AI SEARCH",
           body: `keep learning`, // Format the uptime before sending
-          thumbnailUrl: "https://files.catbox.moe/palnd8.jpg", // Replace with your bot profile photo URL
-          sourceUrl: "https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47", // Your channel URL
+          thumbnailUrl: "https://files.catbox.moe/oznlsw.jpg", // Replace with your bot profile photo URL
+          sourceUrl: "https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F", // Your channel URL
           mediaType: 1,
           showAdAttribution: true, // Verified badge
         },
@@ -109,10 +109,10 @@ keith({
   }
 });
 
-keith({
+zokou({
   nomCom: "gemini",
   aliases: ["gpto4", "gemni", "gpt2", "gpt3"],
-  reaction: '⚔️',
+  reaction: '🚇',
   categorie: "AI"
 }, async (dest, zk, params) => {
   const { repondre, arg } = params;
@@ -137,10 +137,10 @@ keith({
       text: res,
       contextInfo: {
         externalAdReply: {
-          title: "ALPHA-MD GEMINI",
-          body: `keep learning`, // Format the uptime before sending
-          thumbnailUrl: "https://files.catbox.moe/palnd8.jpg", // Replace with your bot profile photo URL
-          sourceUrl: "https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47", // Your channel URL
+          title: "XGAGA-BOTS GEMINI",
+          body: `Keep using AI`, // Format the uptime before sending
+          thumbnailUrl: "https://files.catbox.moe/oznlsw.jpg", // Replace with your bot profile photo URL
+          sourceUrl: "https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F", // Your channel URL
           mediaType: 1,
           showAdAttribution: true, // Verified badge
         },
