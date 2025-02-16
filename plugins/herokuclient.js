@@ -29,7 +29,7 @@ zokou({
     // Fetch config vars from Heroku API
     const configVars = await heroku.get(baseURI);
 
-    let str = '*╭───༺XBOT Heroku vars༻────╮*\n\n';
+    let str = '*╭───༺XGAGA BOTS Heroku vars༻────╮*\n\n';
     
     // Loop through the returned config vars and format them
     for (let key in configVars) {
@@ -56,7 +56,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   const appname = s.HEROKU_APP_NAME;
