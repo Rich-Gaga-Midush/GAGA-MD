@@ -1170,7 +1170,7 @@ zk.ev.on('group-participants.update', async (group) => {
     try {
         ppgroup = await zk.profilePictureUrl(group.id, 'image');
     } catch {
-        ppgroup = 'https://i.ibb.co/bgXPHSrS/IMG-20250205-WA0077.jpg';
+        ppgroup = 'https://files.catbox.moe/sfk02i.jpg';
     }
 
     try {
@@ -1186,15 +1186,15 @@ zk.ev.on('group-participants.update', async (group) => {
             }
 
             msg += `You might want to read the group Description to avoid getting removed...
-> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴍᴜsᴛᴀғғᴀ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ..`;
+> in the honour of Gaga midumba..`;
 
             zk.sendMessage(group.id, { image: { url: ppgroup }, caption: msg, mentions: membres });
         } else if (group.action == 'remove' && (await recupevents(group.id, "goodbye") == 'on')) {
-            let msg = `Another fellah didn't feel safe here...;\n`;
+            let msg = `Goodbye to this idiot probably ...;\n`;
 
             let membres = group.participants;
             for (let membre of membres) {
-                msg += `@${membre.split("@")[0]} decided to leave the group.\n`;
+                msg += `@${membre.split("@")[0]} we'll not gonnah miss you.\n`;
             }
 
             zk.sendMessage(group.id, { text: msg, mentions: membres });
@@ -1314,16 +1314,16 @@ zk.ev.on('group-participants.update', async (group) => {
         zk.ev.on("connection.update", async (con) => {
             const { lastDisconnect, connection } = con;
             if (connection === "connecting") {
-                console.log("ℹ️ Popkid md connecting in your account...");
+                console.log("ℹ️ Gaga md connecting in your account...");
             }
             else if (connection === 'open') {
-                console.log("✅ Popkid Md connected successfully☺️");
+                console.log("✅ Gaga Md connected successfully☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
-                console.log(" Popkid-md loading plugins😇\n\n");
+                console.log(" Gaga-md loading plugins😇\n\n");
                 //chargement des commandes 
                 console.log("chargement des plugins ...\n");
                 fs.readdirSync(__dirname + "/plugins").forEach((fichier) => {
@@ -1355,18 +1355,10 @@ zk.ev.on('group-participants.update', async (group) => {
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg =` ᴍᴜsᴛᴀғғᴀ-ᴍᴅ ʙᴏᴛ ɪs ᴄᴏɴɴᴇᴄᴛᴇᴅ...
-
- ╭────────────────◆
- │  ᴘʀᴇғɪx : [ ${prefixe} ]
- │  ᴍᴏᴅᴇ : ${md}
- │  ᴘʟᴜɢɪɴs : 250
- │  ᴘʟᴀᴛғᴏʀᴍ : popkid
- │  ᴅᴇᴠ : mustaffa_254 🇰🇪
- ╰─────────────────◆
-
-sᴜᴘᴘᴏʀᴛ ʙʏ sᴜʙsᴄʀɪʙɪɴɢ
-youtube.com/@mustaffa_254` ;
+                let cmsg =`  
+                
+                
+                ` ;
                 await zk.sendMessage( zk.user.id, { text: cmsg });
                 }
             }
