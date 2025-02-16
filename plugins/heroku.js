@@ -23,7 +23,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner. or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner. or Gaga*");
   }
 
   // Validate user input and respond accordingly
@@ -65,7 +65,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   // Validate user input and respond accordingly
@@ -106,7 +106,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   // Validate user input and respond accordingly
@@ -146,7 +146,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   // Validate user input and respond accordingly
@@ -187,7 +187,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   // Validate user input and respond accordingly
@@ -228,7 +228,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   // Validate user input and respond accordingly
@@ -269,7 +269,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   // Validate user input and respond accordingly
@@ -310,7 +310,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   // Validate user input and respond accordingly
@@ -350,7 +350,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   // Validate user input and respond accordingly
@@ -390,7 +390,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   // Validate user input and respond accordingly
@@ -431,7 +431,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻* ");
+    return repondre("*This command is restricted to the bot owner or Gaga* ");
   }
 
   // Validate user input and respond accordingly
@@ -472,7 +472,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   // Validate user input and respond accordingly
@@ -513,7 +513,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   // Validate user input and respond accordingly
@@ -554,7 +554,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Beltah Tech 👻*");
+    return repondre("*This command is restricted to the bot owner or Gaga*");
   }
 
   // Validate user input and respond accordingly
