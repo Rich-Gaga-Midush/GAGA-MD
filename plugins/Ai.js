@@ -1,4 +1,4 @@
-const { keith } = require("../keizzah/keith");
+const { zokou } = require("../framework/zokou");
 const ai = require('unlimited-ai');
 const axios = require('axios');
 const wiki = require('wikipedia');
@@ -7,11 +7,11 @@ const apiKey = '4d3d074f107f44e09123d19ed6a89950';
 const baseUrl = 'http://api.football-data.org/v4/';
 
 
-keith({
+zokou({
   nomCom: "serie-a",
   aliases: ["bl1", "bundeslig"],
   categorie: "Soccer",
-  reaction: '🛄',
+  reaction: '⚽',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
 
@@ -34,11 +34,11 @@ keith({
   }
 });
 
-keith({
+zokou({
   nomCom: "laliga",
   aliases: ["bl1", "bundeslig"],
   categorie: "Soccer",
-  reaction: '🛄',
+  reaction: '⚽',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
 
@@ -61,11 +61,11 @@ keith({
   }
 });
 
-keith({
+zokou({
   nomCom: "ligue1",
   aliases: ["bl1", "bundeslig"],
   categorie: "Soccer",
-  reaction: '🛄',
+  reaction: '⚽',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
 
@@ -88,11 +88,11 @@ keith({
   }
 });
 
-keith({
+zokou({
   nomCom: "epl",
   aliases: ["leaguep", "premie"],
   categorie: "Soccer",
-  reaction: '🛄',
+  reaction: '⚽',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
 
@@ -116,11 +116,11 @@ keith({
 });
 
 
-keith({
+zokou({
   nomCom: "bundesliga",
   aliases: ["bl1", "bundeslig"],
   categorie: "Soccer",
-  reaction: '🛄',
+  reaction: '⚽',
 }, async (dest, zk, context) => {
   const { repondre, arg } = context;
 
@@ -143,11 +143,11 @@ keith({
   }
 });
 
-keith({
+zokou({
   nomCom: "football",
   aliases: ["soccer", "foota"],
   categorie: "Soccer",
-  reaction: '🛄',
+  reaction: '⚽',
 }, async (sender, zk, context) => {
   const { repondre, arg } = context;
   const text = arg.join(" ");
@@ -245,6 +245,17 @@ keith({
     return repondre(`❌ An error occurred while fetching data. Please check your query and try again.\n\n*Examples:*\ncompetitions/PL/standings\ncompetitions/SA/scorers`);
   }
 });
+
+
+
+
+
+
+
+
+
+
+
 
 keith({
   nomCom: "technews",
