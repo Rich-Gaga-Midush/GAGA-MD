@@ -222,7 +222,7 @@ function createNotification(deletedMessage) {
 
     let notification = `*[ ᴍᴇssᴀɢᴇ ᴅᴇʟᴇᴛɪᴏɴ ᴅᴇᴛᴇᴄᴛᴇᴅ ]*\n\n`;
     notification += `*⌚Deletion Time:* ${timeInNairobi}\n`;
-    notification += `*👤Deleted By:* @${deletedBy.split('@')[0]}\n\n`;
+    notification += `*👤Deleted By:* @${deletedBy.split('@')[0]}\n\n> 𝕯𝖊𝖑𝖊𝖙𝖊𝖉 𝖒𝖊𝖘𝖘𝖆𝖌𝖊 𝕲𝖊𝖓𝖆𝖗𝖆𝖙𝖊𝖉 𝖇𝖞 𝕲𝖆𝖌𝖆 𝖒𝖉`;
 
     return notification;
 }
@@ -325,7 +325,7 @@ zk.ev.on("messages.upsert", async (m) => {
                     if (deletedMessage.message.conversation) {
                         // Text message
                         await zk.sendMessage(remoteJid, {
-                            text: notification + `*📖Deleted Message:* ${deletedMessage.message.conversation}\n\n> ʀᴇɢᴀʀᴅs ᴛᴏ ʀɪᴄʜ-ɢᴀɢᴀ-ᴍɪᴅᴜsʜ.`,
+                            text: notification + `*📖Deleted Message:* ${deletedMessage.message.conversation}\n\n> 𝕯𝖊𝖑𝖊𝖙𝖊𝖉 𝖒𝖊𝖘𝖘𝖆𝖌𝖊 𝕲𝖊𝖓𝖆𝖗𝖆𝖙𝖊𝖉 𝖇𝖞 𝕲𝖆𝖌𝖆 𝖒𝖉.`,
                             mentions: [deletedMessage.key.participant],
                         });
                     } else if (deletedMessage.message.imageMessage || 
