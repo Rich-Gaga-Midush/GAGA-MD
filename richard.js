@@ -48,7 +48,7 @@ const  {addGroupToBanList,isGroupBanned,removeGroupFromBanList} = require("./bdd
 const {isGroupOnlyAdmin,addGroupToOnlyAdminList,removeGroupFromOnlyAdminList} = require("./bdd/onlyAdmin");
 //const //{loadCmd}=require("/framework/mesfonctions")
 let { reagir } = require(__dirname + "/framework/app");
-var session = conf.session.replace(/BELTAH-MD;;;=>/g,"");
+var session = conf.session.replace(/GAGA-MD;;;=>/g,"");
 const prefixe = conf.PREFIXE;
 
 
@@ -132,7 +132,7 @@ function getCurrentDateTime() {
 setInterval(async () => {
     if (conf.AUTO_BIO === "yes") {
         const currentDateTime = getCurrentDateTime(); // Get the current date and time
-        const bioText = `Gaga md bot is active : ${currentDateTime}`; // Format the bio text
+        const bioText = `Gaga md bot is active: ${currentDateTime}`; // Format the bio text
         await zk.updateProfileStatus(bioText); // Update the bio
         console.log(`Updated Bio: ${bioText}`); // Log the updated bio
     }
@@ -220,9 +220,9 @@ function createNotification(deletedMessage) {
         timeStyle: 'medium',
     }).format(new Date());
 
-    let notification = `*[ ᴍᴇssᴀɢᴇ ᴅᴇʟᴇᴛɪᴏɴ ᴅᴇᴛᴇᴄᴛᴇᴅ ]*\n\n`;
+    let notification = `*[ 𝚇𝙶𝙰𝙶𝙰 𝙱𝙾𝚃𝚂 𝙰𝙽𝚃𝙸𝙳𝙴𝙻𝙴𝚃𝙴 𝚂𝚈𝚂𝚃𝙴𝙼 ]*\n\n`;
     notification += `*⌚Deletion Time:* ${timeInNairobi}\n`;
-    notification += `*👤Deleted By:* @${deletedBy.split('@')[0]}\n\n> 𝕯𝖊𝖑𝖊𝖙𝖊𝖉 𝖒𝖊𝖘𝖘𝖆𝖌𝖊 𝕲𝖊𝖓𝖆𝖗𝖆𝖙𝖊𝖉 𝖇𝖞 𝕲𝖆𝖌𝖆 𝖒𝖉`;
+    notification += `*👤Deleted By:* @${deletedBy.split('@')[0]}\n\n> 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙶𝙴𝙽𝙰𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝚇𝙶𝙰𝙶𝙰 𝙱𝙾𝚃𝚂`;
 
     return notification;
 }
@@ -261,7 +261,7 @@ zk.ev.on("messages.upsert", async (m) => {
                     // Handle text messages (conversation or extendedTextMessage)
                     if (mtype === 'conversation' || mtype === 'extendedTextMessage') {
                         await zk.sendMessage(zk.user.id, {
-                            text: notification + `*Message:* ${deletedMessage.message[mtype].text}\n\n> ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴘᴏᴘᴋɪᴅ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ.`,
+                            text: notification + `*Message:* ${deletedMessage.message[mtype].text}\n\n> 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙶𝙴𝙽𝙰𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝚇𝙶𝙰𝙶𝙰 𝙱𝙾𝚃𝚂.`,
                             mentions: [deletedMessage.key.participant],
                         });
                     }
