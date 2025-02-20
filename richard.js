@@ -127,9 +127,9 @@ function getCurrentDateTime() {
     const dateTime = new Intl.DateTimeFormat('en-KE', options).format(new Date());
     return dateTime;
 }
-// Autobio
+// set autobio
 const autobio = (zk, conf) => {
-  if (conf.AUTOBIO === 'yes') {
+  if (conf.AUTO_BIO === 'yes') {
     setInterval(() => {
       const date = new Date();
       zk.updateProfileStatus(
