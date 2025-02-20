@@ -127,7 +127,29 @@ function getCurrentDateTime() {
     const dateTime = new Intl.DateTimeFormat('en-KE', options).format(new Date());
     return dateTime;
 }
+// Autobio
+const autobio = (zk, conf) => {
+  if (conf.AUTOBIO === 'yes') {
+    setInterval(() => {
+      const date = new Date();
+      zk.updateProfileStatus(
+        `Xgaga bot  is active 24/7\n\n${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi' })}.`
+      );
+    }, 10 * 1000);
+  }
+};
 
+module.exports = autobio;
+
+
+
+
+
+
+
+
+
+        
 // Auto Bio Update Interval
 setInterval(async () => {
     if (conf.AUTO_BIO === "yes") {
