@@ -32,7 +32,7 @@
       "value": "yes",
       "required": false
     },
-    "AUTOBIO": {
+    "AUTO_BIO": {
       "description": "This automatically update your bio status.Always make sure you insert your OWNER_NAME since it uses that to update your bio name status",
       "value": "yes",
       "required": false
@@ -101,11 +101,6 @@
     "OWNER_NAME": {
       "description": "don't you have a name bro.Insert your name here!!",
       "value": "XGAGA",
-      "required": true
-    },
-    "URL": {
-      "description": "you must add your bot image url.Get your image url now and fill it here",
-      "value": "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg",
       "required": true
     },
     "AUTO_READ_MESSAGES": {
