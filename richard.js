@@ -405,8 +405,8 @@ if (conf.AUTO_LIKE_STATUS === "yes") {
                 }
 
                 // Check if bot user ID is available
-                const beltah = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
-                if (!beltah) {
+                const gaga = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
+                if (!gaga) {
                     console.log("Bot's user ID not available. Skipping reaction.");
                     continue;
                 }
@@ -1378,7 +1378,18 @@ zk.ev.on('group-participants.update', async (group) => {
                 await activateCrons();
                 
                 if((conf.DP).toLowerCase() === 'yes') {     
-                let cmsg =`  
+                let cmsg =`  Hello 👋 🥷 ${s.NOM_OWNER} 🥷🏾
+
+  ▓▓ ࿇─────────── ࿇ ▓▓
+
+   𝐗𝐆𝐀𝐆𝐀 𝐁𝐎𝐓 𝐈𝐒 𝐎𝐍𝐋𝐈𝐍𝐄  
+  
+  ࿇  Prefix : ${s.prefixe}
+  ࿇  Owner : ${s.NOM_OWNER}
+  ࿇ Plugins: ${cm.length}
+  ࿇   Date : ${date}       
+  ࿇  Developer : Gaga   |
+  ▓▓ ࿇─────────── ࿇ ▓▓
                 
                 
                 ` ;
