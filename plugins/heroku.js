@@ -868,7 +868,7 @@ changevars("menulinks", "BOT_MENU_LINKS");
 
 
 zokou({
-  nomCom: 'update',
+  nomCom: 'sync',
   aliases: ['redeploy', 'sync'],
   categorie: "system"
 }, async (chatId, zk, context) => {
