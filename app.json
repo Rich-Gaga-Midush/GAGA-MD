@@ -52,9 +52,9 @@
       "value": "Xgaga bots viewed your status✅",
       "required": false
     },
-    "AUTO_STATUS_REPLY": {
-      "description": "type your genuine status message",
-      "value": "no",
+    "ANTILINK": {
+      "description": "type yes to activate or no to deactivate",
+      "value": "yes",
       "required": false
     },
     "ANTICALL_MSG": {
