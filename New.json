@@ -7,7 +7,7 @@
     "baileys",
     "whatsapp"
   ],
-  "logo": "https://github.com/Belt/XBOT",
+  "logo": "",
   "repository": "https://github.com/richgagamidush/XG-MD",
   "succes_url": "/",
   "stack": "container",
@@ -61,6 +61,12 @@
       "description": "Type your anticall message to always send when calls are declined.You can as well leave it blank",
       "value": "",
       "required": false
+
+    },
+    "ANTIDELETEDM": {
+      "description": "type yes if you want you bot to retrieve deleted messages on groups",
+      "value": "yes",
+      "required": true  
     },
     "BOT_NAME": {
       "description": "you must give a name for you bot uhh??!!",
