@@ -47,7 +47,7 @@ zokou({
       );
 
       // Notify the user about the update and redeployment
-      await repondre("*Your bot is getting updated, wait 2 minutes for the redeploy to finish! This will install the latest version of ALPHA-MD.*");
+      await repondre("*Your bot is getting updated, wait 2 minutes for the redeploy to finish! This will install the latest version of Xgaga bots.*");
       console.log("Build details:", response.data);
     } catch (error) {
       // Handle any errors during the redeployment process
