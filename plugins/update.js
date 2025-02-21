@@ -15,7 +15,7 @@ zokou({
 
   // Check if the command is issued by the owner
   if (!superUser) {
-    return repondre("*This command is restricted to the bot owner or Alpha owner 💀*");
+    return repondre("*This command is restricted to Gaga or Gaga md owner*");
   }
 
   // Ensure Heroku app name and API key are set
@@ -35,7 +35,7 @@ zokou({
         `https://api.heroku.com/apps/${herokuAppName}/builds`,
         {
           source_blob: {
-            url: "https://github.com/richgagamidush/XG-MD/tarball/main",
+            url: "https://github.com/richgagamidush/XG-M/tarball/main",
           },
         },
         {
