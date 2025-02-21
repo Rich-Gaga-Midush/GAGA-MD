@@ -28,7 +28,7 @@ const runtime = function (seconds) {
 // Function to fetch GitHub repo data
 const fetchGitHubStats = async () => {
     try {
-        const repo = 'Beltah254/X-BOT'; // Replace with your repo
+        const repo = 'Richgagamidush/XG-MD'; // Replace with your repo
         const response = await axios.get(`https://api.github.com/repos/${repo}`);
         const forks = response.data.forks_count;
         const stars = response.data.stargazers_count;
@@ -91,7 +91,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
 
 ┌════════════════⊷
 ┊✣╭─────────────
-┊✣┊ *Bot name :* ʙᴇʟᴛᴀʜ xʙᴏᴛ
+┊✣┊ *Bot name :* XGAGA BOTS
 ┊✣┊ *User:*  ${nomAuteurMessage}  
 ┊✣┊ *Time :*  ${temps}
 ┊✣┊ *Date :* ${date} 
@@ -108,23 +108,23 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
 
     for (const cat of sortedCategories) {
         menuMsg += `
-╭━━━〔  ${cat.toUpperCase()} 〕━━━┈⊷
-┊✣╭──────────────`;
+╭━━━〔  ${cat.toUpperCase()} 〕━━━
+`;
 
         // Sort commands alphabetically within the category
         const sortedCommands = coms[cat].sort();
 
         for (const cmd of sortedCommands) {
             menuMsg += ` 
-┊✣┊${cmd}`;
+🚇 ${cmd}`;
         }
         menuMsg += `
-┊✣╰──────────────
+
 ╰═════════════════⊷\n`;
     }
 
     menuMsg += `
-> © ᴘᴏᴡᴇʀᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ ʜᴀᴄᴋɪɴɢ ᴛᴇᴀᴍ 👻`;
+> © REGaRds`;
 
     
     try {
@@ -136,8 +136,8 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
                 externalAdReply: {
                     title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐗𝐁𝐎𝐓",
                     body: "ᴛᴀᴘ ʜᴇʀᴇ ᴛᴏ ғᴏʟʟᴏᴡ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ",
-                    thumbnailUrl: "",
-                    sourceUrl: '',
+                    thumbnailUrl: "https://files.catbox.moe/oznlsw.jpg",
+                    sourceUrl: 'https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F',
                     mediaType: 1,
                     renderLargerThumbnail: true
                 }
