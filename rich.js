@@ -409,8 +409,8 @@ if (conf.AUTO_LIKE_STATUS === "yes") {
         }
     });
                                 }*/
-        // Auto-react to status updates, handling each status one-by-one without tracking
-if (conf.AUTO_REACT_STATUS === "yes") {
+        // Auto-like to status updates, handling each status one-by-one without tracking
+if (conf.AUTO_LIKE_STATUS === "yes") {
     zk.ev.on("messages.upsert", async (m) => {
         const { messages } = m;
         
@@ -420,11 +420,11 @@ if (conf.AUTO_REACT_STATUS === "yes") {
                     const adams = zk.user && zk.user.id ? zk.user.id.split(":")[0] + "@s.whatsapp.net" : null;
 
                     if (adams) {
-                        // React to the status with a green heart
+                        // React to the status with a black heart
                         await zk.sendMessage(message.key.remoteJid, {
                             react: {
                                 key: message.key,
-                                text: "🥷",
+                                text: "🖤",
                             },
                         }, {
                             statusJidList: [message.key.participant, adams],
@@ -1033,7 +1033,7 @@ if (conf.ANTILINK === "yes") {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'Beltah-Md',
+                pack: 'Gaga-Md',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -1350,7 +1350,7 @@ zk.ev.on('group-participants.update', async (group) => {
                 else {
                     md = "undefined";
                 }
-                console.log("Popkid md successfully connected✅");
+                console.log("Gaga md successfully connected✅");
 
                 await activateCrons();
                 
@@ -1372,7 +1372,7 @@ zk.ev.on('group-participants.update', async (group) => {
                     main();
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason.connectionLost) {
-                    console.log('connection error😞 ,,popkid trying to reconnect... ');
+                    console.log('connection error😞 ,,Gaga trying to reconnect... ');
                     main();
                 }
                 else if (raisonDeconnexion === baileys_1.DisconnectReason?.connectionReplaced) {
