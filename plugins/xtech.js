@@ -95,7 +95,9 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
  ࿇ *User:*  ${nomAuteurMessage}  
  ࿇ *Time :*  ${temps}
  ࿇ *Date :* ${date} 
+ ࿇ *Prefix :* ${s.prefixe}
  ࿇ *Uptime :*  ${runtime(process.uptime())}  
+ ࿇ *plugins :* ${cm.length}
 └───────────────────
  ━〔 𝐊𝐄𝐄𝐏 𝐔𝐒𝐈𝐍𝐆 𝐆𝐀𝐆𝐀 𝐌𝐃 〕━`;
 
