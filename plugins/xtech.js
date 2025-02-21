@@ -88,16 +88,16 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
 
     let infoMsg = `
 > *${greeting}*
-
+╭━━━〔 𝐗𝐆𝐀𝐆𝐀 𝐁𝐎𝐓𝐒 〕━━━
 ┌════════════════⊷
-┊✣╭─────────────
-┊✣┊ *Bot name :* XGAGA BOTS
-┊✣┊ *User:*  ${nomAuteurMessage}  
-┊✣┊ *Time :*  ${temps}
-┊✣┊ *Date :* ${date} 
-┊✣┊ *Uptime :*  ${runtime(process.uptime())}  
-┊✣└───────────────
-╰═════════════════⊷`;
+╭─────────────────
+  *Bot name :* XGAGA BOTS
+ ✣ *User:*  ${nomAuteurMessage}  
+ ✣ *Time :*  ${temps}
+ ✣ *Date :* ${date} 
+ ✣ *Uptime :*  ${runtime(process.uptime())}  
+└───────────────────
+ ━〔 𝐊𝐄𝐄𝐏 𝐔𝐒𝐈𝐍𝐆 𝐆𝐀𝐆𝐀 𝐌𝐃 〕━`;
 
     let menuMsg =`
 > © regards\n${readmore} `;
@@ -119,12 +119,12 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
 🚇 ${cmd}`;
         }
         menuMsg += `
-
+└───────────────────
 ╰═════════════════⊷\n`;
     }
 
     menuMsg += `
-> © REGaRds`;
+> © 𝐊𝐄𝐄𝐏 𝐔𝐒𝐈𝐍𝐆 𝐆𝐀𝐆𝐀 𝐌𝐃`;
 
     
     try {
@@ -134,8 +134,8 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
                 mentionedJid: [nomAuteurMessage],
                showAdAttribution: true,
                 externalAdReply: {
-                    title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐗𝐁𝐎𝐓",
-                    body: "ᴛᴀᴘ ʜᴇʀᴇ ᴛᴏ ғᴏʟʟᴏᴡ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ",
+                    title: "𝐊𝐄𝐄𝐏 𝐔𝐒𝐈𝐍𝐆 𝐆𝐀𝐆𝐀 𝐌𝐃",
+                    body: "𝚁𝙴𝙶𝙰𝚁𝙳𝚂 𝚃𝙾 𝚁𝙸𝙲𝙷-𝙶𝙰𝙶𝙰-𝙼𝙸𝙳𝚄𝚂𝙷",
                     thumbnailUrl: "https://files.catbox.moe/oznlsw.jpg",
                     sourceUrl: 'https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F',
                     mediaType: 1,
