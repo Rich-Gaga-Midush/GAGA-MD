@@ -47,9 +47,9 @@
       "value": "yes",
       "required": false
     },
-    "AUTO_STATUS_MSG": {
-      "description": "type your genuine status message",
-      "value": "Xgaga bots viewed your status✅",
+    "ANTIVV": {
+      "description": "put yes to activate or no to deactivate",
+      "value": "yes",
       "required": false
     },
     "ANTILINK": {
