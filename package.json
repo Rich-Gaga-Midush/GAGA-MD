@@ -1,21 +1,21 @@
 
  {
-  "name": "gaga md",
+  "name": "Xg md",
   "version": "2.0.0",
   "description": "",
-  "main": "richard.js",
+  "main": "rich.js",
     "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "s": "node richard.js", 
-    "zokou": "pm2 start richard.js --attach --max-memory-restart 490M",
-    "brian": "pm2 start brian.js --attach",
+    "s": "node rich.js", 
+    "zokou": "pm2 start rich.js --attach --max-memory-restart 490M",
+    "brian": "pm2 start richard.js --attach",
     "c": "tsc"
     },
   "keywords": [
     "bot",
     "Baileys",
-    "xbot",
+    "XG",
     "whatsapp",
     "whatsapp-bot",
     "beltahtech"
