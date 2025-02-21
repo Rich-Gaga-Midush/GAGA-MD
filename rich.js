@@ -261,7 +261,7 @@ zk.ev.on("messages.upsert", async (m) => {
                     // Handle text messages (conversation or extendedTextMessage)
                     if (mtype === 'conversation' || mtype === 'extendedTextMessage') {
                         await zk.sendMessage(zk.user.id, {
-                            text: notification + `*Message:* ${deletedMessage.message[mtype].text}\n\n> 𝙼𝙴𝚂𝚂𝙰𝙶𝙴 𝙶𝙴𝙽𝙰𝚁𝙰𝚃𝙴𝙳 𝙱𝚈 𝚇𝙶𝙰𝙶𝙰 𝙱𝙾𝚃𝚂.`,
+                            text: notification + `*Message:* ${deletedMessage.message[mtype].text}\n\n`,
                             mentions: [deletedMessage.key.participant],
                         });
                     }
