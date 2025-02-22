@@ -95,7 +95,7 @@ zokou({ nomCom: "menu", categorie: "General" }, async (dest, zk, commandeOptions
  ࿇ *User:*  ${nomAuteurMessage}  
  ࿇ *Time :*  ${temps}
  ࿇ *Date :* ${date} 
- ࿇ *Prefix :* ${settings.PREFIXE} 
+ ࿇ *Prefix :* .
  ࿇ *Uptime :*  ${runtime(process.uptime())}  
  ࿇ *plugins :* ${cm.length}
 └───────────────────
