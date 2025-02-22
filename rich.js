@@ -228,9 +228,6 @@ const loveEmojis = ["❤️", "💖", "💘", "💝", "💓", "💌", "💕", "�
   "🌚", "🍀", "🌱", "🍃", "🍂", "🌾", "🐉", "🐍", "🦓", "🦄", "🦋", "🦧", "🦘", "🦨", "🦡", "🐉", 
   "🐅", "🐆", "🐓", "🐢", "🐊", "🐠", "🐟", "🐡", "🦑", "🐙", "🦀", "🐬", "🦕", "🦖", "🐾", "🐕", 
   "🐈", "🐇", "🐾"];
-
-
-
  
     // Check if auto-reply is enabled, contact hasn't received a reply, and it's a private chat
     if (conf.AUTO_REPLY === "yes" && !repliedContacts.has(remoteJid) && !ms.key.fromMe && !remoteJid.includes("@g.us")) {
