@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node rich.js", 
     "zokou": "pm2 start rich.js --attach --max-memory-restart 490M",
-    "brian": "pm2 start richard.js --attach",
+    "alpha": "pm2 start rich.js --attach",
     "c": "tsc"
     },
   "keywords": [
