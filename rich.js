@@ -181,7 +181,57 @@ zk.ev.on("messages.upsert", async (m) => {
             return;
         }
     }
+// AUTO_REACT: React to messages with random emoji if enabled.
+if (conf.AUTO_REACT === "yes") {
+  zk.ev.on("messages.upsert", async m => {
+    const { messages } = m;
 
+    // Load emojis from the JSON file
+    const emojiFilePath = path.resolve(__dirname, 'commands', 'emojis.json');
+    let emojis = [];
+    
+    try {
+      // Read the emojis from the file
+      const data = fs.readFileSync(emojiFilePath, 'utf8');
+      emojis = JSON.parse(data); // Parse the JSON data into an array
+    } catch (error) {
+      console.error('Error reading emojis file:', error);
+      return;
+    }
+
+    // Process each message
+    for (const message of messages) {
+      if (!message.key.fromMe) {
+        const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+        
+        // React to the message with a random emoji
+        await zk.sendMessage(message.key.remoteJid, {
+          react: {
+            text: randomEmoji,
+            key: message.key
+          }
+        });
+      }
+    }
+  });
+}
+    
+
+// Track the last reaction time to prevent overflow
+let lastReactionTime = 0;
+
+// Array of love emojis to react with
+const loveEmojis = ["❤️", "💖", "💘", "💝", "💓", "💌", "💕", "😎", "🔥", "💥", "💯", "✨", "🌟", "🌈", "⚡", "💎", "🌀", "👑", "🎉", "🎊", "🦄", "👽", "🛸", 
+  "🚀", "🦋", "💫", "🍀", "🎶", "🎧", "🎸", "🎤", "🏆", "🏅", "🌍", "🌎", "🌏", "🎮", "🎲", "💪", 
+  "🏋️", "🥇", "👟", "🏃", "🚴", "🚶", "🏄", "⛷️", "🕶️", "🧳", "🍿", "🍿", "🥂", "🍻", "🍷", "🍸", 
+  "🥃", "🍾", "🎯", "⏳", "🎁", "🎈", "🎨", "🌻", "🌸", "🌺", "🌹", "🌼", "🌞", "🌝", "🌜", "🌙", 
+  "🌚", "🍀", "🌱", "🍃", "🍂", "🌾", "🐉", "🐍", "🦓", "🦄", "🦋", "🦧", "🦘", "🦨", "🦡", "🐉", 
+  "🐅", "🐆", "🐓", "🐢", "🐊", "🐠", "🐟", "🐡", "🦑", "🐙", "🦀", "🐬", "🦕", "🦖", "🐾", "🐕", 
+  "🐈", "🐇", "🐾"];
+
+
+
+ 
     // Check if auto-reply is enabled, contact hasn't received a reply, and it's a private chat
     if (conf.AUTO_REPLY === "yes" && !repliedContacts.has(remoteJid) && !ms.key.fromMe && !remoteJid.includes("@g.us")) {
         await zk.sendMessage(remoteJid, {
