@@ -3,11 +3,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const { zokou } = require("../framework/zokou");
 
 zokou(
-  { nomCom: "ping2", reaction: "🛸", nomFichier: __filename },
+  { nomCom: "ping", reaction: "✈️", nomFichier: __filename },
   async (dest, zk, commandeOptions) => {
     console.log("Ping command triggered!");
 
-    let captionText = '*🛸 ʙᴏᴛ ɪs ᴏɴʟɪɴᴇ 🛸 \n\nᴛɪᴍɴᴀsʜᴀ-ᴛᴍᴅ\n\nᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ sᴘᴇᴇᴅ ᴏɴʟɪɴᴇ! ';
+    let captionText = '*GAGA XBOT \n\nXGaga\n\n> powered by Gaga! ';
 
     let videoUrl = "https://files.catbox.moe/njb2if.mp4";
     let audioUrl = "https://files.catbox.moe/cpjbnl.mp3";
