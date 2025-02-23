@@ -7,7 +7,7 @@ const axios = require("axios");
 zokou({
   nomCom: "vision",
   aliases: ["analize", "generate"],
-  reaction: '🥷',
+  reaction: '🤖',
   categorie: "search"
 }, async (dest, zk, commandeOptions) => {
   const { repondre, msgRepondu, auteurMessage, arg } = commandeOptions;
@@ -36,8 +36,10 @@ zokou({
         // Send request to the Gemini API with the image and instruction
         const genAI = new GoogleGenerativeAI("AIzaSyAlIHZ7BaC9xu_KE8zL8OHSR3TVTeVYxW8");
        //try these api key
-         https:api.dreaded.site/api/gemini-vision?url=${fta}&instruction=${text}
-        https:api.dreaded.site/api/gemini-analyze
+        
+  try {
+    let data = await axios.get('https:api.dreaded.site/api/gemini-vision?url=${fta}&instruction=${text}`); 
+        
         // Function to convert URL to generative part
         async function urlToGenerativePart(url, mimeType) {
           const response = await axios.get(url, { responseType: 'arraybuffer' });
