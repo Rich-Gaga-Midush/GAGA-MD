@@ -54,7 +54,7 @@ zokou({
           externalAdReply: {
             title: `${conf.BOT} IG DL`,
             body: conf.OWNER_NAME,
-            thumbnailUrl: conf.URL,
+            thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg",
             sourceUrl: conf.GURL,
             mediaType: 1,
             showAdAttribution: true
@@ -71,7 +71,7 @@ zokou({
 });
 
 zokou({
-  nomCom: "facebook",
+  nomCom: "facebook1",
   aliases: ["fbdl", "facebookdl", "fb"],
   categorie: "Download",
   reaction: "📽️"
@@ -121,7 +121,7 @@ zokou({
           showAdAttribution: true,
           title: `${conf.BOT} FB DL`,
           body: `Duration: ${videoData.result.duration}`,
-          thumbnailUrl: videoData.result.thumbnail,
+          thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg",
           sourceUrl: conf.GURL,
           mediaType: 1,
           renderLargerThumbnail: true
@@ -344,7 +344,7 @@ zokou({
             body: "spotify download",
             mediaType: 1,
             sourceUrl: conf.GURL,
-            thumbnailUrl: conf.URL,
+            thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg",
             renderLargerThumbnail: false,
             showAdAttribution: true,
           },
@@ -361,7 +361,7 @@ zokou({
             body: "spotify download",
             mediaType: 1,
             sourceUrl: conf.GURL,
-            thumbnailUrl: conf.URL,
+            thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg",
             renderLargerThumbnail: false,
             showAdAttribution: true,
           },
