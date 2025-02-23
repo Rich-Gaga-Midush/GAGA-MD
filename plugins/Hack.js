@@ -21,7 +21,7 @@ zokou({
         console.error("Error sending loading message:", _0x191491);
       }
     }
-    const _0x452d = "```🗂️ ALL FILES TRANSFERRED 𝙵𝙾𝚁 𝚃𝙸𝙼𝙽𝙰𝚂𝙰 𝚃𝙴𝙲𝙷```";
+    const _0x452d = "```🗂️ ALL FILES TRANSFERRED My owner```";
     try {
       await _0x988825(_0x452d);
     } catch (_0x3842d7) {
