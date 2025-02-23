@@ -30,12 +30,14 @@ zokou({
         // Download and save the image
         const fdr = await zk.downloadAndSaveMediaMessage(msgRepondu.imageMessage);
 
-        // Upload the image to a hosting platform (e.g., Imgur)
-        const fta = await uploadtoimgur(fdr);
+        // Upload the image to a hosting platform (e.g., gemini)
+        const fta = await uploadtogemini(fdr);
 
         // Send request to the Gemini API with the image and instruction
         const genAI = new GoogleGenerativeAI("AIzaSyAlIHZ7BaC9xu_KE8zL8OHSR3TVTeVYxW8");
-
+       //try these api key
+         https:api.dreaded.site/api/gemini-vision?url=${fta}&instruction=${text}
+        https:api.dreaded.site/api/gemini-analyze
         // Function to convert URL to generative part
         async function urlToGenerativePart(url, mimeType) {
           const response = await axios.get(url, { responseType: 'arraybuffer' });
