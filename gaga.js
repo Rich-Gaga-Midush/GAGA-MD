@@ -1426,7 +1426,18 @@ if (texte && texte.startsWith('>')) {
         if (conf.DP.toLowerCase() === 'yes') {
           await zk.sendMessage(zk.user.id, {
             text: `*GAGA* connected successfully ✅
-            
+    Hello 👋 🥷 ${s.NOM_OWNER} 🥷🏾
+  ▓▓ ࿇─────────── ࿇ ▓▓
+
+ 𝐗𝐆𝐀𝐆𝐀 𝐁𝐎𝐓 𝐈𝐒 𝐎𝐍𝐋𝐈𝐍𝐄  
+  
+  ࿇  Prefix : ${s.prefixe}
+  ࿇  Owner : ${s.NOM_OWNER}
+  ࿇ Plugins: ${cm.length}
+  ࿇   Date : ${date}       
+  ࿇  Developer : Gaga   |
+  ▓▓ ࿇─────────── ࿇ ▓▓
+       
             Please update your bot now to connect latest version 
             
             Use command [  ${prefixe} update ] `
