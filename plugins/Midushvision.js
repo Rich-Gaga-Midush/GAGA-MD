@@ -38,7 +38,7 @@ zokou({
        //try these api key
         
   try {
-    let data = await axios.get('https:api.dreaded.site/api/gemini-vision?url=${fta}&instruction=${text}`); 
+    let data = await axios.get("https:api.dreaded.site/api/gemini-vision?url=${fta}&instruction=${text}"); 
         
         // Function to convert URL to generative part
         async function urlToGenerativePart(url, mimeType) {
