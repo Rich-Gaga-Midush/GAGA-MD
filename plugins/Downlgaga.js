@@ -119,7 +119,7 @@ async (dest, zk, commandeOptions) => {
         externalAdReply: {
           title: "Enjoy...",
           body: "GAGA MD FACEBOOK DOWNLOADER",
-          thumbnailUrl: conf.URL,
+          thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg",
           sourceUrl: conf.GURL,
           mediaType: 1,
           showAdAttribution: true
@@ -167,7 +167,7 @@ async (dest, zk, commandeOptions) => {
         externalAdReply: {
           title: "Enjoy...",
           body: "GAGA MD FACEBOOK DOWNLOADER",
-          thumbnailUrl: conf.URL,
+          thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg",
           sourceUrl: conf.GURL,
           mediaType: 1,
           showAdAttribution: true
@@ -215,7 +215,7 @@ async (dest, zk, commandeOptions) => {
         externalAdReply: {
           title: "Enjoy...",
           body: "GAGA MD FACEBOOK DOWNLOADER",
-          thumbnailUrl: conf.URL,
+          thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg",
           sourceUrl: conf.GURL,
           mediaType: 1,
           showAdAttribution: true
