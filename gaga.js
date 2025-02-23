@@ -210,7 +210,7 @@ if (conf.AUTOBIO === 'yes') {
     setInterval(() => {
       const date = new Date();
       zk.updateProfileStatus(
-        `🥷 ${conf.BOT} 🥷 is active: ${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi' })}.`
+        `🥷 XGAGA BOTS 🥷 is active: ${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi' })}.`
       );
     }, 10 * 1000);
   }
