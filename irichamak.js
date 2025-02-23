@@ -824,9 +824,9 @@ if (texte && texte.startsWith('>')) {
       contextInfo: {
         externalAdReply: {
           title: "GAGA 𝐌𝐃" ,
-          body: "POWERED BY BELTAH HACKING TEAM",
-          sourceUrl: "https://whatsapp.com/channel/0029VaRHDBKKmCPKp9B2uH2F" ,
-          thumbnailUrl: "https://telegra.ph/file/dcce2ddee6cc7597c859a.jpg" || conf.BOT_MENU_LINK,
+          body: "SYSTEM BY GAGA",
+          sourceUrl: "https://whatsapp.com/channel/0029VasnifMFi8xW4Mqysn2F" ,
+          thumbnailUrl: "https://files.catbox.moe/sfk02i.jpg" || conf.BOT_MENU_LINK,
           mediaType: 1,
           showAdAttribution: true,
           renderLargerThumbnail: false
