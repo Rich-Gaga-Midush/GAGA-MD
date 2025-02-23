@@ -3,13 +3,13 @@
   "name": "Xg md",
   "version": "2.0.0",
   "description": "",
-  "main": "rich.js",
-    "type": "commonjs",
+  "main": "gaga.js",
+    "type": "commono.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "s": "node rich.js", 
-    "zokou": "pm2 start rich.js --attach --max-memory-restart 490M",
-    "alpha": "pm2 start rich.js --attach",
+    "zokou": "pm2 start gaga.js --attach --max-memory-restart 490M",
+    "alpha": "pm2 start gaga.js --attach",
     "c": "tsc"
     },
   "keywords": [
@@ -18,9 +18,9 @@
     "XG",
     "whatsapp",
     "whatsapp-bot",
-    "beltahtech"
+    "midushgaga"
    ],
-  "author": "Beltah Tech",
+  "author": "gaga",
 "license": "ISC",
   "dependencies": {
     "@adiwajshing/keyed-db": "^0.2.4",
