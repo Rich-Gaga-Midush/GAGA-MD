@@ -128,16 +128,19 @@ function getCurrentDateTime() {
     return dateTime;
 }
 
-// Auto Bio Update Interval
-setInterval(async () => {
-    if (conf.AUTO_BIO === "yes") {
-        const currentDateTime = getCurrentDateTime(); // Get the current date and time
-        const bioText = `Gaga md bot is active: ${currentDateTime}`; // Format the bio text
-        await zk.updateProfileStatus(bioText); // Update the bio
-        console.log(`Updated Bio: ${bioText}`); // Log the updated bio
-    }
-}, 60000); // Update bio every 60 seconds
+// Auto Bio Update 
+const autobio = (zk, conf) => {
+  if (conf.AUTOBIO === 'yes') {
+    setInterval(() => {
+      const date = new Date();
+      zk.updateProfileStatus(
+        `🥷 ${conf.BOT} 🥷 is active 24/7\n\n${date.toLocaleString('en-US', { timeZone: 'Africa/Nairobi' })} It's a ${date.toLocaleString('en-US', { weekday: 'long', timeZone: 'Africa/Nairobi' })}.`
+      );
+    }, 10 * 1000);
+  }
+};
 
+module.exports = autobio;
 // Function to handle deleted messages
 // Other functions (auto-react, anti-delete, etc.) as needed
         zk.ev.on("call", async (callData) => {
