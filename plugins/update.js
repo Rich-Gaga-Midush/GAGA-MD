@@ -35,7 +35,7 @@ zokou({
         `https://api.heroku.com/apps/${herokuAppName}/builds`,
         {
           source_blob: {
-            url: "https://github.com/richgagamidush/XG-M/tarball/main",
+            url: "https://github.com/Rich-Gaga-Midush/GAGA-MD/tarball/main",
           },
         },
         {
@@ -47,7 +47,7 @@ zokou({
       );
 
       // Notify the user about the update and redeployment
-      await repondre("*Your bot is getting updated, wait 2 minutes for the redeploy to finish! This will install the latest version of Xgaga bots.*");
+      await repondre("> Your bot is getting updated, wait 2 minutes for the redeploy to finish! This will install the latest version of Xgaga bots.*");
       console.log("Build details:", response.data);
     } catch (error) {
       // Handle any errors during the redeployment process
