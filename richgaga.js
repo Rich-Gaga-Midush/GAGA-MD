@@ -76,7 +76,7 @@ const {
   atbverifierEtatJid,
   atbrecupererActionJid
 } = require("./bdd/antibot");
-let evt = require(__dirname + "/midushgaga/gaga");
+let evt = require(__dirname + "/framework/zokou");
 const {
   isUserBanned,
   addUserToBanList,
@@ -92,10 +92,10 @@ const {
   addGroupToOnlyAdminList,
   removeGroupFromOnlyAdminList
 } = require("./bdd/onlyAdmin");
-//const //{loadCmd}=require("/midushgaga/mesfonctions")
+//const //{loadCmd}=require("/framework/zokou")
 let {
   reagir
-} = require(__dirname + "/midushgaga/app");
+} = require(__dirname + "/framework/app");
 var session = conf.session.replace(/GAGA-MD;;;=>/g, "");
 const prefixe = conf.PREFIXE || [];
 
@@ -568,11 +568,11 @@ const emojis = ['👣', '🏗️', '✈️', '🌽', '🏸', '🛖', '🍁', '�
       }
     });
 
-    const gaga = response.data;
+    const zokou = response.data;
 
-    if (gaga && gaga.status && gaga.BK9) {
+    if (zokou && zokou.status && zokou.BK9) {
       await zk.sendMessage(origineMessage, {
-        text: keith.BK9
+        text: zokou.BK9
       });
       lastTextTime = Date.now(); // Update the last message time
     } else {
@@ -993,7 +993,7 @@ if (texte && texte.startsWith('>')) {
             /******************* PM_PERMT***************/
 
             if (!superUser && origineMessage === auteurMessage && conf.PM_PERMIT === "yes") {
-              repondre("ᴀᴄᴄᴇss ᴅᴇɴɪᴇᴅ ❗❗\n\n> ʏᴏᴜ ʜᴀᴠᴇ ɴᴏ ᴀᴄᴄᴇss ᴏғ ʙᴇʟᴛᴀʜ-ᴍᴅ ɪɴ ᴘᴍ.");
+              repondre("You have no here ❌❌❌ ❗❗\n\n> Idiot🤕🤕.");
               return;
             }
             ///////////////////////////////
@@ -1055,7 +1055,7 @@ if (texte && texte.startsWith('>')) {
       try {
         const metadata = await zk.groupMetadata(group.id);
         if (group.action == 'add' && (await recupevents(group.id, "welcome")) == 'on') {
-          let msg = `𝐁𝐄𝐋𝐓𝐀𝐇 𝐌𝐃\n\n👋 Hello
+          let msg = `Gaga md\n\n👋 Hello
 `;
           let membres = group.participants;
           for (let membre of membres) {
@@ -1181,15 +1181,14 @@ if (texte && texte.startsWith('>')) {
             }
             else if (connection === 'open') {
                await zk.groupAcceptInvite("EcbqrI0Me6H0oHtcGB8SxU");
-               await zk.groupAcceptInvite("");
-                console.log("✅ Connection successful! ☺️");
+               console.log("✅ Connection successful! ☺️");
                 console.log("--");
                 await (0, baileys_1.delay)(200);
                 console.log("------");
                 await (0, baileys_1.delay)(300);
                 console.log("------------------/-----");
                 console.log("Gaga MD bot is online 🕸\n\n");
-                console.log("Loading commands...\n");
+                console.log("Loading plugins...\n");
                 fs.readdirSync(__dirname + "/plugins").forEach((fichier) => {
                     if (path.extname(fichier).toLowerCase() == (".js")) {
                         try {
